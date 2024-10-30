@@ -6,6 +6,29 @@ output:
     toc_float: true
 ---
 
-# Education
+### Education
 
-# Work Experience
+**Columbia University** - New York, NY
+
+*Master of Science, Biostatistics*
+
+September 2024 - May 2026
+
+**McMaster University** - Hamilton, ON
+
+*Bachelor of Engineering & Biosciences*
+
+*Bachelor of Science*
+
+September 2019 - June 2024
+
+### Work Experience
+
+**Data Analyst**
+
+May-August 2021-2024
+
+* Implemented Data Collection and Analysis System for Annual KPI Survey Reporting
+* Utilized Excel and Power BI to Create Advanced Databases and Understand Data Trends
+* Worked Directly with Partners to Facilitate Effective Data Collection, in English and French
+* Worked on Health & Nutrition in 2021, 2023, and 2024; Worked on IM/IT in 2022

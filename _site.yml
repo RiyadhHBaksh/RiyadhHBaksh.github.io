@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "Resume"
       href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<rhb2152@cumc.columbia.edu>
@@ -13,4 +13,4 @@ navbar:
       href: http://github.com/RiyadhHBaksh/
 output:
   html_document:
-    theme: cosmo
+    theme: journal

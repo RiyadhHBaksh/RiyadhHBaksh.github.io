@@ -8,3 +8,6 @@ output:
 
 # Riyadh Baksh
 
+Hello! I'm Riyadh, and welcome to my website!
+
+Use the navigation bar at the top to access different pages.
