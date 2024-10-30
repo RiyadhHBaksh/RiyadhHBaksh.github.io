@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "Resume"
       href: about.html
+    - text: "noaa dataset"
+      href: noaa.html
     - icon: fa-envelope fa-lg
       href: mailto:<rhb2152@cumc.columbia.edu>
     - icon: fa-linkedin fa-lg

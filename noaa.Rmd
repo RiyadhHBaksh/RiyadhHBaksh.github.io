@@ -1,0 +1,71 @@
+---
+title: "Instacart Data"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+
+data("ny_noaa")
+```
+
+{data-width=650}
+-----------------------------------------------------------------------
+
+### Maximum vs. Minimum Temperature in January 2010
+
+```{r}
+ny_noaa |>
+  drop_na() |>
+  mutate(
+    year=year(date),
+    month=month(date),
+    tmax=as.numeric(tmax)/10,
+    tmin=as.numeric(tmin)/10
+    ) |>
+  filter(year==2010 & month==1) |>
+  plot_ly(
+    x=~tmax, y=~tmin, type="scatter", mode="markers", alpha=0.5
+  )
+```
+
+{data-width=350}
+-----------------------------------------------------------------------
+
+### Distribution of Maximum Temperature by Month in 2010
+
+```{r}
+ny_noaa |>
+  drop_na() |>
+  mutate(
+    year=year(date),
+    month=as.factor(month(date)),
+    tmax=as.numeric(tmax)/10
+    ) |>
+  filter(year==2010) |>
+  plot_ly(
+    y=~tmax, color=~month, type="box", colors="viridis"
+  )
+```
+
+### Number of Observations by Year in January
+
+```{r}
+ny_noaa |>
+  drop_na() |>
+  mutate(
+    year=as.factor(year(date)),
+    month=month(date)
+    ) |>
+  filter(month==1) |>
+  count(year) |>
+  plot_ly(
+    x=~year, y=~n, color=~year, type="bar", colors="viridis"
+  )
+```
